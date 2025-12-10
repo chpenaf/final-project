@@ -1,0 +1,65 @@
+<mvc:View   controllerName="com.logaligroup.finalproject.controller.CreateEmployee"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns:f="sap.f"
+            xmlns="sap.m" >
+    
+    <NavContainer>
+        <pages>
+            <f:DynamicPage>
+                <f:title>
+                    <f:DynamicPageTitle>
+                        <f:heading>
+                            <Title text="{i18n>TitleCreateEmployee}" />
+                        </f:heading>
+                    </f:DynamicPageTitle>
+                </f:title>
+
+                <f:content>
+                    <Wizard id="CreateEmployeeWizard" >
+                    
+                        <!-- Wizard Step 1 : Select Employee Type -->
+                        <WizardStep id="EmployeeTypeSelectionStep"
+                                    title="{i18n>Step1}" >
+
+                            <HBox   alignItems="Center" 
+                                    justifyContent="SpaceBetween" >
+                                <HBox>
+                                    <Button id="btnIntern"
+                                            text="{i18n>BtnIntern}"
+                                            press="goToEmployeeDataStep" />
+                                </HBox>
+                                <HBox>
+                                    <Button id="btnFreelance"
+                                            text="{i18n>BtnFreelance}"
+                                            press="goToEmployeeDataStep" />
+                                </HBox>
+                                <HBox>
+                                    <Button id="btnManager"
+                                            text="{i18n>BtnManager}"
+                                            press="goToEmployeeDataStep" />
+                                </HBox>
+                            </HBox>
+
+                        </WizardStep>
+                    
+                    
+                        <!-- Wizard Step 2 : Employee Data -->
+                        <WizardStep id="EmployeeData"
+                                    title="{i18n>Step2}" >
+
+                        </WizardStep>
+
+                        <!-- Wizard Step 3 : Additional Data -->
+                        <WizardStep id="EmployeeAdditionalDataStep"
+                                    title="{i18n>Step3}">
+
+                        </WizardStep>
+
+                    </Wizard>
+                </f:content>
+
+            </f:DynamicPage>
+        </pages>
+    </NavContainer>
+
+</mvc:View>

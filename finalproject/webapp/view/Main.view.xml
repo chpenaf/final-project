@@ -1,0 +1,57 @@
+<mvc:View   controllerName="com.logaligroup.finalproject.controller.Main"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns="sap.m">
+
+    <Page id="page" title="{i18n>title}">
+
+        <!-- Panel Employees -->
+        <Panel  class="sapUiResponsiveMargin"
+                headerText="{i18n>PanelEmployees}"
+                expandable="true"
+                expanded="true" 
+                width="auto" >
+            <content>
+
+                <!-- Create Employees -->
+                <GenericTile    id="TileCreateEmployee"
+                                class="sapUiSmallMarginEnd"
+                                press="onNavToCreateEmployee" >
+                    <TileContent footer="{i18n>TileCreateEmployee}">
+                        <ImageContent src="sap-icon://add-employee" />
+                    </TileContent>
+                </GenericTile>
+
+                <!-- View Employees -->
+                <GenericTile    id="TileViewEmployees" >
+                    <TileContent footer="{i18n>TileViewEmployees}">
+                        <ImageContent src="sap-icon://employee-lookup" />
+                    </TileContent>
+                </GenericTile>
+
+            </content>
+            
+        </Panel>
+
+        <!-- Panel Orders -->
+        <Panel  class="sapUiResponsiveMargin"
+                headerText="{i18n>PanelOrders}"
+                expandable="true"
+                expanded="true" 
+                width="auto" >
+            <content>
+
+                <!-- Sign Orders -->
+                <GenericTile    id="TileSignOrder"
+                                class="sapUiSmallMarginEnd" >
+                    <TileContent footer="{i18n>TileSignOrder}">
+                        <ImageContent src="sap-icon://signature" />
+                    </TileContent>
+                </GenericTile>
+
+            </content>
+            
+        </Panel>
+
+    </Page>
+
+</mvc:View>
