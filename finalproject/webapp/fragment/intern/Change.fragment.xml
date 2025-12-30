@@ -20,6 +20,21 @@
                 <Label text="{i18n>DocumentNumber}" />
                 <Input value="{DocumentNumber}" required="true" />
 
+                <Label text="{i18n>GrossAnnualSalary}" />
+                <Slider enableTickmarks="true"
+                        class="sapUiLargeMarginBottom"
+                        value="{Salary}" 
+                        min="12000" 
+                        max="80000" >
+                    <ResponsiveScale tickmarksBetweenLabels="5000" />
+                </Slider>
+
+                <Label text="{i18n>HiringDate}" />
+                <DatePicker value="{
+                    path: '/date',
+                    type: 'DateType'
+                }" /> 
+
             </form:content>
 
         </form:SimpleForm>
