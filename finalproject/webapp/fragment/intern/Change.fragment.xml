@@ -1,0 +1,28 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+
+    <VBox class="sapUiSmallMargin">
+        <form:SimpleForm    id="formChangeInternData"
+                            editable="true"
+                            layout="ResponsiveGridLayout" >
+
+            <form:content>
+                <core:Title text="Fragment"/>
+
+                <Label text="{i18n>FirstName}" />
+                <Input value="{FirstName}" required="true" />
+
+                <Label text="{i18n>LastName}" />
+                <Input value="{LastName}" required="true" />
+
+                <Label text="{i18n>DocumentNumber}" />
+                <Input value="{DocumentNumber}" required="true" />
+
+            </form:content>
+
+        </form:SimpleForm>
+    </VBox>
+
+</core:FragmentDefinition>

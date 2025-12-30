@@ -1,4 +1,8 @@
 {
   "extends": "plugin:@sap-ux/eslint-plugin-fiori-tools/defaultTS",
-  "root": true
+  "root": true,
+  "rules": {
+    "no-console":"off",
+    "linebreak-style":"off"
+  }
 }
